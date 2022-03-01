@@ -1,15 +1,11 @@
 import React from 'react';
 import './App.css';
+import TopAnimeList from './components/TopAnimeList/TopAnimeList';
 
-
-function App() {
-
+const App: React.FC = () => {
   return (
-    <div>
-      Teste
-    </div>
-  );
-}
-
+    <TopAnimeList />
+  )
+};
 
 export default App;
