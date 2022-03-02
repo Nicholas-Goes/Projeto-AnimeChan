@@ -16,3 +16,7 @@ h1 {
 a {
   font-family: 'PT Sans Narrow';
 }
+
+body {
+  background-color: rgb(30, 29, 32);
+}
