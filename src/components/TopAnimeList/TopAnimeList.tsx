@@ -29,7 +29,7 @@ function TopAnimeList() {
 
   return (
     <div className="TopAnime">
-      <h1>Animes Com As Melhores Notas</h1>
+      <h1>Melhores Animes</h1>
       <div className="TopAnime--listarea">
         <div className="TopAnime--list" style={{
           width: topList.length * 300

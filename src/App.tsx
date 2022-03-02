@@ -1,16 +1,26 @@
 import './App.css'
 import TopAnimeList from './components/TopAnimeList/TopAnimeList'
 import SeasonAnimeList from './components/SeasonAnimeList/SeasonAnimeList'
+import AnimeHeader from './components/AnimeHeader/AnimeHeader'
+import AnimeFooter from './components/AnimeFooter/AnimeFooter'
 
 function App() {
 
   return (
-    <section>
-      <TopAnimeList />
+    <div className="page">
+      <div className="header">
+        <AnimeHeader/>
+      </div>
+      <div className="content--lists">
+        <TopAnimeList />
 
-      <SeasonAnimeList />
-    </section>
+        <SeasonAnimeList />
+      </div>
+      <div className="footer">
+        <AnimeFooter />
+      </div>
+    </div>
   )
 }
 
-export default App
+export default App;
