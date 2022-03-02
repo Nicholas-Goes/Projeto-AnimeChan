@@ -1,6 +1,6 @@
 function AnimeFooter () {
   return (
-    <footer></footer>
+    <footer>FOOTER</footer>
   )
 
 }

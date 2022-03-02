@@ -1,0 +1,26 @@
+header {
+  height: 85vh;
+  display: flex;
+}
+
+.header--content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header--content h1 {
+  font-size: 28px;
+}
+
+.header--content h1 span {
+  font-size: 28px;
+  color: #5D59AF;
+}
+
+.header--content sub {
+  text-align: justify;
+  width: 80%;
+  font-size: 16px;
+}

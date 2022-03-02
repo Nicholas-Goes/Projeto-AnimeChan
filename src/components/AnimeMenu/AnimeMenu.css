@@ -1,0 +1,39 @@
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+}
+.AnimeMenu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.AnimeMenu--logo {
+  width: 38px;
+  padding-right: 10px;
+}
+
+.AnimeMenu ul {
+  list-style-type: none;
+  padding-right: 2.5rem;
+}
+
+.AnimeMenu ul li {
+  display: flex;
+}
+
+.AnimeMenu ul li a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.AnimeMenu ul li a span{
+  text-decoration: none;
+  color: #5D59AF;
+}
