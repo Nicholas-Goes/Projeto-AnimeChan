@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Jikan from "../../services/jikan";
 import "./TopAnimeList.css"
 
-interface ResponseData {
+interface ResponseTopData {
   slug: `Melhores Animes`;
   title: string;
   description: string;
@@ -16,7 +16,7 @@ interface ResponseData {
 
 function TopAnimeList() {
   
-  const [topList, setTopList] = useState<ResponseData[]>([]);
+  const [topList, setTopList] = useState<ResponseTopData[]>([]);
 
   useEffect(() =>{
     Jikan
@@ -29,7 +29,7 @@ function TopAnimeList() {
 
   return (
     <div className="TopAnime">
-      <h1>Melhores Animes</h1>
+      <h1>Animes Com As Melhores Notas</h1>
       <div className="TopAnime--listarea">
         <div className="TopAnime--list" style={{
           width: topList.length * 300

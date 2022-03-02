@@ -1,10 +1,15 @@
 import './App.css'
 import TopAnimeList from './components/TopAnimeList/TopAnimeList'
+import SeasonAnimeList from './components/SeasonAnimeList/SeasonAnimeList'
 
 function App() {
 
   return (
-    <TopAnimeList />
+    <section>
+      <TopAnimeList />
+
+      <SeasonAnimeList />
+    </section>
   )
 }
 
