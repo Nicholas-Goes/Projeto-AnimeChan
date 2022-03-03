@@ -9,8 +9,9 @@ function App() {
 
   return (
     <div className="page">
-      <div className="header">
+      <div>
         <AnimeMenu />
+
         <AnimeHeader/>
       </div>
       <div className="content--lists">

@@ -13,8 +13,8 @@
 }
 
 .seasonAnime--listitem {
-  width: 250px;
-  height: 375px;
+  width: 225px;
+  height: 325px;
   display: inline-block;
   padding-left: 0.75rem;
   transform: scale(0.95);
@@ -28,6 +28,5 @@
 .seasonAnime--listitem img {
   width: 100%;
   height: 100%;
-  border-radius: 0.25rem;
-  box-shadow: 0 0 10px rgb(17, 17, 19);
+  border-radius: 25px;
 }

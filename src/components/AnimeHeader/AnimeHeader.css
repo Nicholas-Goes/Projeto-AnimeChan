@@ -1,28 +1,10 @@
-header {
-  height: 85vh;
-  display: flex;
+.featured {
+  height: 80vh;
+  border-radius: 0px 0px 50px 50px;
 }
 
-.header--content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.header--content h1 {
-  font-size: 28px;
-  color: white;
-}
-
-.header--content h1 span {
-  font-size: 28px;
-  color: #39aee4;
-}
-
-.header--content sub {
-  text-align: justify;
-  width: 80%;
-  font-size: 16px;
-  color: white;
+.featured--vertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #1A2A3F 12.5%, transparent 90%);
 }

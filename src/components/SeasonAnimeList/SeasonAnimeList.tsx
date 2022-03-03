@@ -27,7 +27,7 @@ function SeasonAnimeList() {
   
   return (
     <div className="seasonAnime">
-      <h1>Animes da Temporada</h1>
+      <h1><img src="https://img.icons8.com/ios-glyphs/30/ffffff/spyro.png"/> Animes da Temporada</h1>
       <div className="seasonAnime--listarea">
         <div className="seasonAnime--list" style={{
           width: seasonList.length * 300
