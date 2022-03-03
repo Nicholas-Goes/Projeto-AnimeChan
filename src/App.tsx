@@ -1,8 +1,8 @@
 import './App.css'
-import TopAnimeList from './components/TopAnimeList/TopAnimeList'
-import AnimeHeader from './components/AnimeHeader/AnimeHeader'
-import AnimeFooter from './components/AnimeFooter/AnimeFooter'
-import AnimeMenu from './components/AnimeMenu/AnimeMenu'
+import AnimeMenu from './components/AnimeMenu';
+import AnimeHeader from './components/AnimeHeader';
+import TopAnimeList from './components/TopAnimeList';
+import AnimeFooter from './components/AnimeFooter';
 
 function App() {
 
@@ -16,7 +16,10 @@ function App() {
       <div>
         <TopAnimeList />
 
-        <SeasonAnimeList />
+        <TopAnimeList />
+
+        <TopAnimeList />
+        
       </div>
       <div>
         <AnimeFooter />

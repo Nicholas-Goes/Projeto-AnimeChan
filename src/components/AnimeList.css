@@ -1,0 +1,46 @@
+.anime-list {
+  background-color: wheat;
+}
+
+.title {
+  display: flex;
+  align-items:center;
+  padding: 0.75rem;
+  background-color: yellow;
+}
+.title h1 {
+  font-size: 1.95rem;
+}
+
+.button--left,
+.button--right {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 299px;
+    background-color: red;
+}
+
+.button--left {
+    left: 0;
+}
+.button--right {
+    right: 0;
+}
+
+.anime-list-area {
+  padding: 0.75rem;
+  overflow-x: hidden;
+  background-color: orange;
+}
+
+.anime-list-item a {
+  margin-right: 1.25rem;
+}
+
+.anime-list-item img {
+  width: 180px;
+  height: 270px;
+  border-radius: 25px;
+}
