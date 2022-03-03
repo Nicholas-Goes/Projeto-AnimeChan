@@ -17,7 +17,7 @@ function App() {
       <div>
         <AnimeList title="Melhores Animes" fetchUrl={request.fetchTopRated}/> 
         <AnimeList title="Em Breve" fetchUrl={request.fetchSeasonUpcoming}/>   
-        <AnimeList title="Rolando Agora" fetchUrl={request.fetchSeasonNow}/>  
+        <AnimeList title="Rolando Agora" fetchUrl={request.fetchSeasonNow}/> 
       </div>
       <div>
         <AnimeFooter />
