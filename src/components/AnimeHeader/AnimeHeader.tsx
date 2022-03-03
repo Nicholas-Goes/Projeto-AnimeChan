@@ -7,7 +7,6 @@ function AnimeHeader() {
       backgroundPosition: 'center',
       backgroundImage: `url(src/assets/banner-mobile.webp)`,
     }}>
-      <div className='featured--vertical'></div>
     </section>
   )
 }

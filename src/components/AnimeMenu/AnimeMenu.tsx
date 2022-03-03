@@ -5,7 +5,6 @@ function AnimeMenu() {
     <nav className="AnimeMenu">
       <ul className="AnimeMenu--ul">
         <li className="AnimeMenu--li">
-          <img className="AnimeMenu--logo" src="https://img.icons8.com/fluency/48/000000/water.png"/>
           <a href="#" className="AnimeMenu--a">Anime<span>Chan</span></a>
         </li>
 

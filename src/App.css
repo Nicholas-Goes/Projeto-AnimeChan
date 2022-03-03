@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
 
-:root {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,6 +17,10 @@ a {
   font-family: 'PT Sans Narrow';
 }
 
+span {
+  font-family: 'PT Sans Narrow';
+}
+
 body {
-  background-color: #1A2A3F;
+  background-color: white;
 }
