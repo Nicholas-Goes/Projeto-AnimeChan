@@ -4,7 +4,7 @@ import "./AnimeList.css";
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
-interface ResponseTopData {
+type AnimeData = {
   title: string;
   score: number;
   year: string;
@@ -16,25 +16,28 @@ interface ResponseTopData {
   }
 }
 
-function TopAnimeList() {
+type Props = {
+  fetchUrl: string;
+  title: string;
+};
+
+function AnimeList({ title, fetchUrl } : Props ) {
   
-  const [topList, setTopList] = useState<ResponseTopData[]>([]);
+  const [animeList, setAnimeList] = useState<AnimeData[]>([]);
 
   useEffect(() =>{
-    Jikan
-      .get(`/top/anime`)
-      .then(response => {
-        setTopList(response.data.data)
-      })
-      .catch((err) => console.log(err))
-  }, []);
+    async function FetchData() {
+      const request = await Jikan.get(fetchUrl);
+      setAnimeList(request.data.data);
+      return console.log(request);;
+    }
+    FetchData();    
+  }, [fetchUrl]);
 
   return (
     <section className="anime-list">
       <section className="title">
-        <h1>
-          Melhores Animes
-        </h1>
+        <h1>{title}</h1>
       </section>
       <section className="button-container">
         <div className='button--left'>
@@ -46,12 +49,12 @@ function TopAnimeList() {
       </section>
       <ul className="anime-list-area">
         <li className="anime-list-item" style={{
-          width: topList.length * 275
+          width: animeList.length * 275
         }}>
-          {topList.length > 0 && topList.map(topList => {
+          {animeList.length > 0 && animeList.map(animeList => {
             return (
               <a>
-                <img src={topList.images.webp.image_url} alt={topList.description} />
+                <img src={animeList.images.webp.image_url} alt={animeList.description} />
               </a>
             )
           })
@@ -62,4 +65,8 @@ function TopAnimeList() {
   )
 }
 
-export default TopAnimeList;
+export default AnimeList;
+
+function fetchUrl(fetchUrl: any) {
+  throw new Error("Function not implemented.");
+}

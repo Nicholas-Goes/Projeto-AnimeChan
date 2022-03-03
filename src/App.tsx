@@ -1,8 +1,9 @@
 import './App.css'
 import AnimeMenu from './components/AnimeMenu';
 import AnimeHeader from './components/AnimeHeader';
-import TopAnimeList from './components/TopAnimeList';
+import AnimeList from './components/AnimeList';
 import AnimeFooter from './components/AnimeFooter';
+import { request } from "./services/Requests";
 
 function App() {
 
@@ -14,12 +15,9 @@ function App() {
         <AnimeHeader/>
       </div>
       <div>
-        <TopAnimeList />
-
-        <TopAnimeList />
-
-        <TopAnimeList />
-        
+        <AnimeList title="Melhores Animes" fetchUrl={request.fetchTopRated}/> 
+        <AnimeList title="Em Breve" fetchUrl={request.fetchSeasonUpcoming}/>   
+        <AnimeList title="Rolando Agora" fetchUrl={request.fetchSeasonNow}/>  
       </div>
       <div>
         <AnimeFooter />
