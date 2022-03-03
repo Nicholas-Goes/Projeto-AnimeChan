@@ -11,9 +11,8 @@
 .title h1 {
   font-size: 1.95rem;
 }
-
-.button--left,
-.button--right {
+.button-left,
+.button-right {
     cursor: pointer;
     position: absolute;
     display: flex;
@@ -22,17 +21,21 @@
     background-color: red;
 }
 
-.button--left {
+.button-left {
     left: 0;
 }
-.button--right {
+.button-right {
     right: 0;
 }
 
 .anime-list-area {
   padding: 0.75rem;
   overflow-x: hidden;
-  background-color: orange;
+  background-color: orange;  
+}
+
+.anime-list-item {
+  transition: all ease 0.5s; 
 }
 
 .anime-list-item a {

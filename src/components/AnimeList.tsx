@@ -25,11 +25,30 @@ function AnimeList({ title, fetchUrl } : Props ) {
   
   const [animeList, setAnimeList] = useState<AnimeData[]>([]);
 
+  const [scrollX, setScrollX] = useState(0);
+
+  const handleLeftArrow = () => {
+    let x = scrollX + Math.round(window.innerWidth / 2);
+    if(x > 0) {
+      x = 0;
+    }
+    setScrollX(x);
+  }
+
+  const handleRightArrow = () => {
+    let x = scrollX - Math.round(window.innerWidth / 2);
+    let ListW = animeList.length * 200
+    if((window.innerWidth - ListW) > x) {
+      x = (window.innerWidth - ListW) - 60;
+    }
+    setScrollX(x);    
+  }
+
   useEffect(() =>{
     async function FetchData() {
       const request = await Jikan.get(fetchUrl);
       setAnimeList(request.data.data);
-      return console.log(request);;
+      return request;
     }
     FetchData();    
   }, [fetchUrl]);
@@ -40,15 +59,16 @@ function AnimeList({ title, fetchUrl } : Props ) {
         <h1>{title}</h1>
       </section>
       <section className="button-container">
-        <div className='button--left'>
+        <div className='button-left' onClick={handleLeftArrow}>
             <NavigateBeforeIcon style={{fontSize: 50, color: 'white'}}/>
         </div>
-        <div className='button--right'>
+        <div className='button-right' onClick={handleRightArrow}>
             <NavigateNextIcon style={{fontSize: 50, color: 'white'}}/>
         </div>        
       </section>
       <ul className="anime-list-area">
         <li className="anime-list-item" style={{
+          marginLeft: scrollX,
           width: animeList.length * 275
         }}>
           {animeList.length > 0 && animeList.map(animeList => {
@@ -66,7 +86,3 @@ function AnimeList({ title, fetchUrl } : Props ) {
 }
 
 export default AnimeList;
-
-function fetchUrl(fetchUrl: any) {
-  throw new Error("Function not implemented.");
-}
