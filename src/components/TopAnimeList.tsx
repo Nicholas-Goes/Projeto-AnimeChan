@@ -33,7 +33,6 @@ function TopAnimeList() {
     <section className="anime-list">
       <section className="title">
         <h1>
-          <img src="https://img.icons8.com/ios-glyphs/30/000000/fire-element--v1.png"/>
           Melhores Animes
         </h1>
       </section>
