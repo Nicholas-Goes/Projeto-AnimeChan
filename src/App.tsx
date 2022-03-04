@@ -1,6 +1,6 @@
 import './App.css'
 import AnimeMenu from './components/AnimeMenu';
-import AnimeHeader from './components/AnimeHeader';
+import AnimeReviews from './components/AnimeReviews';
 import AnimeList from './components/AnimeList';
 import AnimeFooter from './components/AnimeFooter';
 import { request } from "./services/Requests";
@@ -10,7 +10,7 @@ function App() {
     <div>
       <div>
         <AnimeMenu />
-        <AnimeHeader/>
+        <AnimeReviews/>
       </div>
       <div>
         <AnimeList title="Melhores Animes" fetchUrl={request.fetchTopList}/> 

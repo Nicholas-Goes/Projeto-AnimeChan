@@ -1,6 +1,10 @@
-import "./AnimeHeader.css"
+import { useState } from "react";
+import "./AnimeReviews.css"
 
-function AnimeHeader() {
+function AnimeReviews() {
+
+  const [animeReviews, setAnimeReviews] = useState([])
+  
   return (
     <section className="featured" style={{
       backgroundSize: 'cover',
@@ -11,4 +15,4 @@ function AnimeHeader() {
   )
 }
 
-export default AnimeHeader;
+export default AnimeReviews;
