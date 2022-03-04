@@ -2,7 +2,7 @@
   width: 100%;
   position: fixed;
   z-index: 999;
-  background: white;
+  background-color: white;
 }
 
 .menu-list {
@@ -14,9 +14,12 @@
 }
 
 .menu-list-item {
-  font-size: 24px;
+  font-size: 36px;
+}
+.menu-list-item a{
+  color: black;
 }
 
 .menu-list-item a span {
-  color: red;
+  color: rgb(255, 51, 0);
 }

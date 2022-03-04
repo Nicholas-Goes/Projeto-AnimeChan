@@ -1,10 +1,11 @@
 .title {
   display: flex;
   align-items:center;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 .title h1 {
-  font-size: 1.95rem;
+  font-size: 1.75rem;
+  color: black;
 }
 .button-left,
 .button-right {
@@ -24,7 +25,7 @@
 }
 
 .anime-list-area {
-  padding: 0.75rem;
+  padding: 1rem;
   overflow-x: hidden;
 
 }
