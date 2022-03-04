@@ -1,0 +1,18 @@
+.menu {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background: white;
+}
+
+.menu-list {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+
+.menu-list-item {
+  font-size: 24px;
+}
