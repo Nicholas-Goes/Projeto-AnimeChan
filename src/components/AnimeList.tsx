@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Jikan from "../services/jikan";
+import Jikan from "../services/Jikan";
 import "./AnimeList.css";
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';

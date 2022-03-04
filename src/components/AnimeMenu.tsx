@@ -6,7 +6,7 @@ function AnimeMenu() {
     <nav className="menu">
       <ul className="menu-list">
         <li className="menu-list-item"><a href="">Anime<span>Chan</span></a></li>
-        <li className="menu-list-item"><a href=""><MenuIcon /></a></li>
+        <li className="menu-list-item"><a href=""><MenuIcon sx={{fontSize: 24}} /></a></li>
       </ul>
     </nav>
   )

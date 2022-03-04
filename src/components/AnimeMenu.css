@@ -16,3 +16,7 @@
 .menu-list-item {
   font-size: 24px;
 }
+
+.menu-list-item a span {
+  color: red;
+}

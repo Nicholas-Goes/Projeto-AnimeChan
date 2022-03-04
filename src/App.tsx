@@ -4,7 +4,6 @@ import AnimeHeader from './components/AnimeHeader';
 import AnimeList from './components/AnimeList';
 import AnimeFooter from './components/AnimeFooter';
 import { request } from "./services/Requests";
-import StarIcon from '@mui/icons-material/Star';
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
         <AnimeHeader/>
       </div>
       <div>
-        <AnimeList title="Melhores Animes" fetchUrl={request.fetchTopRated}/> 
+        <AnimeList title="Melhores Animes" fetchUrl={request.fetchTopList}/> 
         <AnimeList title="Em Breve" fetchUrl={request.fetchSeasonUpcoming}/>   
         <AnimeList title="Rolando Agora" fetchUrl={request.fetchSeasonNow}/> 
       </div>
