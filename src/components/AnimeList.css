@@ -1,12 +1,7 @@
-.anime-list {
-  background-color: wheat;
-}
-
 .title {
   display: flex;
   align-items:center;
   padding: 0.75rem;
-  background-color: yellow;
 }
 .title h1 {
   font-size: 1.95rem;
@@ -18,7 +13,7 @@
     display: flex;
     align-items: center;
     height: 299px;
-    background-color: red;
+    z-index: 99;
 }
 
 .button-left {
@@ -31,7 +26,7 @@
 .anime-list-area {
   padding: 0.75rem;
   overflow-x: hidden;
-  background-color: orange;  
+
 }
 
 .anime-list-item {
@@ -46,4 +41,10 @@
   width: 180px;
   height: 270px;
   border-radius: 25px;
+  transform: scale(1);
+  transition: all 0.2s ease-out;
+}
+
+.anime-list-item img:hover {
+  transform: scale(1.05);
 }

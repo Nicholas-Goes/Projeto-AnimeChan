@@ -4,14 +4,13 @@ import AnimeHeader from './components/AnimeHeader';
 import AnimeList from './components/AnimeList';
 import AnimeFooter from './components/AnimeFooter';
 import { request } from "./services/Requests";
+import StarIcon from '@mui/icons-material/Star';
 
 function App() {
-
   return (
     <div>
       <div>
         <AnimeMenu />
-
         <AnimeHeader/>
       </div>
       <div>
