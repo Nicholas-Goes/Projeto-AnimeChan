@@ -1,5 +1,6 @@
-import { Key, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Jikan from "../service/Jikan";
+import './AnimeList.css'
 
 type ResponseData = {
   synopsis: string
@@ -9,7 +10,6 @@ type ResponseData = {
     }
   } 
 }
-
 
 type props = {
   title: string;
@@ -30,18 +30,20 @@ function AnimeList( { title, fetchUrl}: props ) {
   }, [fetchUrl])
 
   return (
-    <section className="anime-row">
+    <div className="anime-row">
       <h2>{title}</h2>
-      <section className="anime-posters" >
-        {animeList.length > 0 && animeList.map((animeList, key) => (
-          <ul key={key}>
-            <li>
-              <img src={animeList.images.jpg.large_image_url} alt={animeList.synopsis}></img>
-            </li>
-          </ul>
-        ))}
-      </section>
-    </section>
+      <div className="anime-poster-area">
+        <div className="anime-poster-list" style={{
+          width: animeList.length * 275
+        }}>
+          {animeList.length > 0 && animeList.map((animeList, key) => (
+            <div className="anime-poster-item" key={key}>
+                <img src={animeList.images.jpg.large_image_url} alt={animeList.synopsis}></img>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   )
 }
 export default AnimeList;
