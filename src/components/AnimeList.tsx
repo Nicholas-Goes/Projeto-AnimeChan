@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Key, useEffect, useState } from "react";
 import Jikan from "../service/Jikan";
 
 type ResponseData = {
@@ -33,8 +33,8 @@ function AnimeList( { title, fetchUrl}: props ) {
     <section className="anime-row">
       <h2>{title}</h2>
       <section className="anime-posters" >
-        {animeList.length > 0 && animeList.map(animeList => (
-          <ul>
+        {animeList.length > 0 && animeList.map((animeList, key) => (
+          <ul key={key}>
             <li>
               <img src={animeList.images.jpg.large_image_url} alt={animeList.synopsis}></img>
             </li>
