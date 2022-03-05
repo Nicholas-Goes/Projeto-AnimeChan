@@ -1,3 +1,3 @@
 export const requests = {
-  fetchTopAnime: `/trending/anime`
+  fetchTopAnime: `/top/anime`
 }
