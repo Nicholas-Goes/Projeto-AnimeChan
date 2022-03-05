@@ -1,5 +1,5 @@
 {
-  "name": "projeto-animechan",
+  "name": "refactor",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -8,10 +8,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.8.1",
-    "@emotion/styled": "^11.8.1",
-    "@mui/icons-material": "^5.4.4",
-    "@mui/material": "^5.4.4",
     "axios": "^0.26.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
