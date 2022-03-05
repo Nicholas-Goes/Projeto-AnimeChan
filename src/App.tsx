@@ -10,7 +10,7 @@ function App() {
     <div>
       <div>
         <AnimeMenu />
-        <AnimeReviews/>
+        <AnimeReviews fetchUrl={request.fetchReviews} sub=""/>
       </div>
       <div>
         <AnimeList title="Melhores Animes" fetchUrl={request.fetchTopList}/> 

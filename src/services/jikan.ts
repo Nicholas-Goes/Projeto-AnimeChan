@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const Jikan = axios.create({
-  baseURL: "https://api.jikan.moe/v4"
+const Kitsu = axios.create({
+  baseURL: "https://kitsu.io/api/edge"
 });
 
-export default Jikan;
+export default Kitsu;
