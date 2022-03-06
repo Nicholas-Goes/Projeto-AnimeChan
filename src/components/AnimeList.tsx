@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Jikan from "../service/Jikan";
 import './AnimeList.css'
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 type ResponseData = {
   synopsis: string
@@ -18,6 +20,25 @@ type props = {
 
 function AnimeList( { title, fetchUrl}: props ) {
 
+  const [scrollX, setScrollX] = useState(0);
+
+  const handleLeftArrow = () => {
+    let x = scrollX + Math.round(window.innerWidth / 2);
+    if(x > 0) {
+      x = 0;
+    }
+    setScrollX(x);
+  }
+
+  const handleRightArrow = () => {
+    let x = scrollX - Math.round(window.innerWidth / 2);
+    let ListW = animeList.length * 200
+    if((window.innerWidth - ListW) > x) {
+      x = (window.innerWidth - ListW) - 60;
+    }
+    setScrollX(x);    
+  }
+
   const [animeList, setAnimeList] = useState<ResponseData[]>([]);
 
   useEffect(() => {
@@ -32,9 +53,19 @@ function AnimeList( { title, fetchUrl}: props ) {
   return (
     <div className="anime-row">
       <h2>{title}</h2>
+
+      <div className="anime-button-left" onClick={handleLeftArrow}>
+        <NavigateBeforeIcon style={{fontSize: 50}} />
+      </div>
+
+      <div className="anime-button-right" onClick={handleRightArrow}>
+        <NavigateNextIcon style={{fontSize: 50}} />
+      </div>
+
       <div className="anime-poster-area">
         <div className="anime-poster-list" style={{
-          width: animeList.length * 275
+          marginLeft: scrollX,
+          width: animeList.length * 265
         }}>
           {animeList.length > 0 && animeList.map((animeList, key) => (
             <div className="anime-poster-item" key={key}>
