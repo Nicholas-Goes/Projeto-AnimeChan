@@ -17,7 +17,7 @@ Jikan.interceptors.response.use(response => {
   const originalRequest = config;
 
   if (status === 429) {
-      return sleepRequest(1000, originalRequest);
+      return sleepRequest(3600, originalRequest);
   }
 });
 
