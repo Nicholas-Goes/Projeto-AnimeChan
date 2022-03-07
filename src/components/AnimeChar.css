@@ -6,6 +6,10 @@
   margin: 15px;
 }
 
+.char-row-area {
+  overflow-x: hidden;
+}
+
 .char-row-item {
   display: inline-block;
   width: 200px;

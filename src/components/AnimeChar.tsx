@@ -26,7 +26,7 @@ function AnimeChar({ title, fetchUrl }: props) {
     async function fetchData() {
       const request = await Jikan.get(fetchUrl);
       setCharList(request.data.data);
-      return console.log(request);
+      return request;
     }
     fetchData();
   }, [fetchUrl])
