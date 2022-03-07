@@ -1,5 +1,4 @@
 import AnimeList from "./components/AnimeList"
-import AnimeRecommendations from "./components/AnimeRecommendations"
 import { requests } from "./service/Requests"
 import "./Index.css"
 
@@ -7,7 +6,7 @@ function App() {
   return (
     <div className="page">
       <div className="anime-recommendations">
-        <AnimeRecommendations />
+        
       </div>
       <div className="anime-list">
         <AnimeList title="Upcoming" fetchUrl={requests.fetchSeasonUpcoming}/>
