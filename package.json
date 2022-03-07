@@ -2,7 +2,7 @@
   "name": "projeto-animechan",
   "private": true,
   "version": "0.0.0",
-  "resolutions": {
+  "overrides": {
     "csstype": "3.0.10"
   },
   "scripts": {
