@@ -16,9 +16,10 @@ type ResponseData = {
 type props = {
   title: string;
   fetchUrl: string;
+  link: string;
 }
 
-function AnimeList( { title, fetchUrl}: props ) {
+function AnimeList( { title, fetchUrl, link }: props ) {
 
   const [scrollX, setScrollX] = useState(0);
 
@@ -52,7 +53,10 @@ function AnimeList( { title, fetchUrl}: props ) {
 
   return (
     <div className="anime-row">
-      <h2>{title}</h2>
+      <div className="anime-row-text">
+        <h2>{title}</h2>
+        <a href={link}>View more</a>
+      </div>
 
       <div className="anime-button-left" onClick={handleLeftArrow}>
         <NavigateBeforeIcon style={{fontSize: 50}} />

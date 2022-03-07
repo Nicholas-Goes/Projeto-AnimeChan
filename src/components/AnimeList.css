@@ -2,8 +2,22 @@
   margin-bottom: 30px;
 }
 
-.anime-row h2 {
+.anime-row-text {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
   margin: 15px;
+}
+
+.anime-row-text h2 {
+  color: #45414A;
+}
+.anime-row-text a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #974a5d;
+  cursor: pointer;
 }
 
 .anime-poster-area {
