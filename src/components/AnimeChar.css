@@ -1,0 +1,25 @@
+.char-row {
+  margin-bottom: 15px;
+}
+
+.char-row h2 {
+  margin: 15px;
+}
+
+.char-row-item {
+  display: inline-block;
+  width: 200px;
+  height: 275px;
+  padding-left: 15px;
+}
+
+.char-row-item img {
+  width: 100%;
+  height: 100%;
+  transform: scale(0.95);
+  transition: all ease 0.2s;
+}
+
+.char-row-item img:hover {
+  transform: scale(1);
+}

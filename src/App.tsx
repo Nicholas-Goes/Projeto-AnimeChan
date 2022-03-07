@@ -1,12 +1,13 @@
-import AnimeList from "./components/AnimeList"
-import { requests } from "./service/Requests"
-import "./Index.css"
+import AnimeList from "./components/AnimeList";
+import AnimeChar from "./components/AnimeChar";
+import { requests } from "./service/Requests";
+import "./Index.css";
 
 function App() {
   return (
     <div className="page">
-      <div className="anime-recommendations">
-        
+      <div className="anime-char">
+        <AnimeChar title="Favorite Characters" fetchUrl={requests.fetchCharacters} />                
       </div>
       <div className="anime-list">
         <AnimeList title="Upcoming" fetchUrl={requests.fetchSeasonUpcoming}/>
