@@ -1,28 +1,10 @@
-import AnimeList from "./components/AnimeList";
-import AnimeHeader from "./components/AnimeHeader";
-import { requests } from "./service/Requests";
-import "./index.css";
+import WaifuHeader from './Components/WaifuHeader'
+import { Requests } from './Services/Requests'
 
 function App() {
   return (
     <div className="page">
-      <div className="header">
-        <AnimeHeader fetchUrl={requests.fetchCharacters} />  
-      </div>
-
-      <div className="anime-list">
-        <AnimeList title="Upcoming" fetchUrl={requests.fetchSeasonUpcoming} link="/"/>
-        <AnimeList title="On Air" fetchUrl={requests.fetchSeasonNow} link="/"/>
-        <AnimeList title="Top Rated" fetchUrl={requests.fetchTopAnime} link="/"/>
-        <AnimeList title="Action" fetchUrl={requests.fetchActionAnime} link="/"/>
-        <AnimeList title="Adventure" fetchUrl={requests.fetchAdventureAnime} link="/"/>
-        <AnimeList title="Romance" fetchUrl={requests.fetchRomanceAnime} link="/"/>
-        <AnimeList title="Ecchi" fetchUrl={requests.fetchEcchiAnime} link="/"/>
-        <AnimeList title="Harem" fetchUrl={requests.fetchHaremAnime} link="/"/>
-        <AnimeList title="Drama" fetchUrl={requests.fetchDramaAnime} link="/"/>
-        <AnimeList title="Comedy" fetchUrl={requests.fetchComedyAnime} link="/"/>
-      </div>    
-         
+      <WaifuHeader fetchUrl={Requests.fetchWaifus}/>
     </div>
   )
 }

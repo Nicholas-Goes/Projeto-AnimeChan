@@ -1,11 +1,7 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;700&family=Titillium+Web&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'titillium web', sans-serif;
-  scroll-behavior: smooth;
-  text-decoration: none;
 }
