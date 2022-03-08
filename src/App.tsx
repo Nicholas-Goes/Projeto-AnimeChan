@@ -1,12 +1,13 @@
 import AnimeList from "./components/AnimeList";
+import AnimeHeader from "./components/AnimeHeader";
 import { requests } from "./service/Requests";
 import "./index.css";
 
 function App() {
   return (
     <div className="page">
-      <div className="anime-char">
-           
+      <div className="header">
+        <AnimeHeader />  
       </div>
       <div className="anime-list">
         <AnimeList title="Upcoming" fetchUrl={requests.fetchSeasonUpcoming} link="/"/>
