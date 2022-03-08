@@ -7,8 +7,9 @@ function App() {
   return (
     <div className="page">
       <div className="header">
-        <AnimeHeader />  
+        <AnimeHeader fetchUrl={requests.fetchCharacters} />  
       </div>
+
       <div className="anime-list">
         <AnimeList title="Upcoming" fetchUrl={requests.fetchSeasonUpcoming} link="/"/>
         <AnimeList title="On Air" fetchUrl={requests.fetchSeasonNow} link="/"/>
@@ -20,7 +21,8 @@ function App() {
         <AnimeList title="Harem" fetchUrl={requests.fetchHaremAnime} link="/"/>
         <AnimeList title="Drama" fetchUrl={requests.fetchDramaAnime} link="/"/>
         <AnimeList title="Comedy" fetchUrl={requests.fetchComedyAnime} link="/"/>
-      </div>       
+      </div>    
+         
     </div>
   )
 }
