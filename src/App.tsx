@@ -1,6 +1,6 @@
 import AnimeList from "./components/AnimeList";
 import { requests } from "./service/Requests";
-import "./Index.css";
+import "./index.css";
 
 function App() {
   return (
