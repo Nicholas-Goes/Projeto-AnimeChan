@@ -1,3 +1,15 @@
 export const Requests = {
+  fetchTopAnime: `/top/anime`,
+  fetchSeasonNow: `/seasons/now`,
+  fetchSeasonUpcoming: `/seasons/upcoming`,
   fetchWaifus: `/sfw/waifu`,
+  fetchFantasy: `/anime?sfw=false&genres=10`,
+  fetchAction: `/anime?sfw=false&genres=1`,
+  fetchAdventure: `/anime?sfw=false&genres=2`,
+  fetchComedy: `/anime?sfw=false&genres=4`,
+  fetchSports: `/anime?sfw=false&genres=30`,
+  fetchDrama: `/anime?sfw=false&genres=8`,
+  fetchHarem: `/anime?sfw=false&genres=35`,
+  fetchRomance: `/anime?sfw=false&genres=22`,
+  fetchEcchi: `/anime?sfw=false&genres=9`,
 }

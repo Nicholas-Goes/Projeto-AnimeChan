@@ -1,0 +1,8 @@
+.animeRow--item {
+  display: inline-block;
+}
+
+.animeRow--item img {
+  width: 150px;
+  height: 225px;
+}
