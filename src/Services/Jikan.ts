@@ -1,5 +1,5 @@
 import axios from 'axios';
-import rateLimiter from 'axios-rate-Limit';
+import rateLimiter from 'axios-rate-limit';
 
 const BASE_URL = 'https://api.jikan.moe/v4';
 
