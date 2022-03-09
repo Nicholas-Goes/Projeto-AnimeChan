@@ -31,7 +31,7 @@ function WaifuHeader({fetchUrl}: Props) {
     <div>
         <header className="waifu-header" style={{
           backgroundImage: `url('${background}')`,
-          backgroundPosition: 'initial',
+          backgroundPosition: 'top',
           backgroundSize: 'cover',
         }}>
           <nav className="waifu-header-nav">

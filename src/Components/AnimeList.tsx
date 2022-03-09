@@ -30,17 +30,22 @@ useEffect(() => {
 }, [fetchUrl]);
 
   return (
-    <div className='animeRow--listarea'>
-      <h2>{title}</h2>
-      <div className='animeRow--list' style={{
-        marginLeft: scrollX,
-        width: anime.length * 250,
-      }}>
-        {anime.length > 0 && anime.map((anime, key) =>(
-          <div key={key} className='animeRow--item'>
-            <img src={anime.images.jpg.large_image_url} alt={anime.synopsis}/>                  
-          </div>
-        ))}
+    <div className="animeRow">
+      <div className="animeRow--title">
+        <h2>{title}</h2>
+        <a href="#">Ver mais</a>
+      </div>
+      <div className='animeRow--listarea'>
+        <div className='animeRow--list' style={{
+          marginLeft: scrollX,
+          width: anime.length * 250,
+        }}>
+          {anime.length > 0 && anime.map((anime, key) =>(
+            <div key={key} className='animeRow--item'>
+              <img src={anime.images.jpg.large_image_url} alt={anime.synopsis}/>                  
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

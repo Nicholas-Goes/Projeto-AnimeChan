@@ -1,8 +1,40 @@
+.animeRow {
+  margin-bottom: 25px;
+}
+
+.animeRow--title {
+  margin: 20px 30px 0px 30px;
+}
+.animeRow--title a {
+  text-decoration: none;
+  font-weight: 700;
+  margin: 15px;
+  color: black;
+}
+.animeRow--title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.animeRow--listarea {
+  overflow-x: hidden;
+  padding-left: 30px;
+}
 .animeRow--item {
   display: inline-block;
+  width: 200px;
+  height: 310px;
+  margin-right: 15px;
 }
 
 .animeRow--item img {
-  width: 150px;
-  height: 225px;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.95);
+  transition: all 0.2s ease
+}
+
+.animeRow--item img:hover {
+  transform: scale(1);
 }
