@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import Waifu from "../Services/Waifu";
 import "./WaifuHeader.css"
+import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
 type WaifuData = {
-  url: string;
+  object: {
+    url: string;
+  }
 }
 
 type Props = {
@@ -17,7 +20,7 @@ function WaifuHeader({fetchUrl}: Props) {
   useEffect(() => {
     async function FetchWaifu() {
       const request = await Waifu.get(fetchUrl);
-      setBackground(request.data.images);
+      setBackground(request.data.url);
       return request;
     }
     FetchWaifu();
@@ -26,22 +29,19 @@ function WaifuHeader({fetchUrl}: Props) {
 
   return (
     <div>
-      {background.map((background, key) => (
-        <header key={key} className="waifu-header" style={{
-          backgroundImage: `url('${background.url}')`,
+        <header className="waifu-header" style={{
+          backgroundImage: `url('${background}')`,
           backgroundPosition: 'initial',
-          backgroundSize: 'cover'
+          backgroundSize: 'cover',
         }}>
           <nav className="waifu-header-nav">
-            <ul className="waifu-header-nav-ul">
-              <li><a>teste<span>TESTE</span></a></li>
-              <li><a>teste</a></li>
+            <ul className="waifu-header-nav-ul" >
+              <li className="waifu-header-nav-text"><a>Anime<span>Chan</span></a></li>
+              <li><a><MenuOutlinedIcon style={{fontSize: 32}} /></a></li>
             </ul>
           </nav>
         </header>
-      ))}
     </div>
-  
   )
 }
 
