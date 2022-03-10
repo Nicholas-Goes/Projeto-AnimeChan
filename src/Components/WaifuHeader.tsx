@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Waifu from "../Services/Waifu";
 import "./WaifuHeader.css"
+
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
 type WaifuData = {
@@ -37,7 +38,7 @@ function WaifuHeader({fetchUrl}: Props) {
           <nav className="waifu-header-nav">
             <ul className="waifu-header-nav-ul" >
               <li className="waifu-header-nav-text"><a>Anime<span>Chan</span></a></li>
-              <li><a><MenuOutlinedIcon style={{fontSize: 32}} /></a></li>
+              <li><a><MenuOutlinedIcon style={{fontSize: 32}}/></a></li>
             </ul>
           </nav>
         </header>

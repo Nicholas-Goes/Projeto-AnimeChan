@@ -1,4 +1,5 @@
 import AnimeList from './Components/AnimeList'
+import Footer from './Components/Footer'
 import WaifuHeader from './Components/WaifuHeader'
 import { Requests } from './Services/Requests'
 
@@ -20,6 +21,10 @@ function App() {
         <AnimeList title="Romance" fetchUrl={Requests.fetchRomance} />
         <AnimeList title="Harem" fetchUrl={Requests.fetchHarem} />
         <AnimeList title="Ecchi" fetchUrl={Requests.fetchEcchi} />
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </div>
   )
