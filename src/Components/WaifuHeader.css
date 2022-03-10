@@ -1,9 +1,8 @@
 .waifu-header {
   height: 45vh;
-  
 }
 
-.waifu-header-nav {
+.waifu-nav {
   width: 100%;
   height: 10vh;
   position: fixed;
@@ -11,7 +10,7 @@
   background-color: hsl(0, 0%, 99%);
 }
 
-.waifu-header-nav-ul {
+.waifu-navbar {
   display: flex;
   height: inherit;
   align-items:center;
@@ -19,17 +18,49 @@
   justify-content: space-between;
   padding: 30px;
 }
-.waifu-header-nav-ul li {
+
+.waifu-navbar li {
   cursor: pointer;
 }
 
-.waifu-header-nav-text a {
+.waifu-navtext a {
   font-weight: bold;
   font-size: 22px;
   color: hsl(0, 0%, 15%);
 }
-.waifu-header-nav-text span {
+
+.waifu-navtext span {
   font-size: 28px;
   font-weight: bold;
-  color: rgb(11, 184, 184);
+  color: rgb(184, 109, 11);
+}
+
+.waifu-dropdown-menu {
+  display: none;
+  width: 100%;
+  background-color: hsl(0, 0%, 99.5%);
+}
+
+.waifu-dropdown-list {
+  list-style-type: none;
+}
+
+.waifu-dropdown-list li {
+  padding: 25px;
+  text-align: right;
+  transition: all 0.4s ease;
+}
+
+.waifu-dropdown-list li a {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 22px;
+  color: hsl(0, 0%, 15%);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.waifu-dropdown-list li a:hover {
+  color: #b86d0b;
 }

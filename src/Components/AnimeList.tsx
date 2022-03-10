@@ -3,6 +3,7 @@ import Jikan from "../Services/Jikan";
 import './AnimeList.css'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+import { useQuery } from "react-query";
 
 type AnimeData = {
   images: {
@@ -23,6 +24,7 @@ function AnimeList({title, fetchUrl}: props) {
   const [scrollX, setScrollX] = useState(0);
 
   const [anime, setAnime] = useState<AnimeData[]>([])
+
 
   const handleLeftArrow = () => {
     let x = scrollX + Math.round(window.innerWidth / 2);
@@ -69,7 +71,7 @@ function AnimeList({title, fetchUrl}: props) {
         }}>
           {anime.length > 0 && anime.map((anime, key) =>(
             <div key={key} className='animeRow--item'>
-              <img src={anime.images.jpg.large_image_url} alt={anime.synopsis}/>                  
+              <img src={anime.images.jpg.large_image_url} alt={anime.synopsis}/>               
             </div>
           ))}
         </div>

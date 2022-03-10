@@ -11,7 +11,7 @@
   text-decoration: none;
   font-weight: 700;
   margin: 15px;
-  color: rgb(11, 184, 184);
+  color: rgb(184, 109, 11);
 }
 
 .animeRow--title {
@@ -37,10 +37,10 @@
   height: 100%;
   transition: all 0.2s ease;
   border-radius: 15px;
-  filter: blur(0px);
+  transform: scale(0.95);
 }
 .animeRow--item img:hover {
-  filter: blur(2px);
+  transform: scale(1); 
 }
 
 .animeRow--list {
@@ -53,12 +53,15 @@
     position: absolute;
     z-index: 99;
     margin: 120px 15px 15px 15px;
-    padding: 10px;
+    padding: 5px;
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    background-color: rgb(184, 109, 11);
+    opacity: 0;
 }
 
 .animeRow--left {
@@ -67,4 +70,9 @@
 
 .animeRow--right {
     right: 0;
+}
+
+.animeRow:hover .animeRow--left,
+.animeRow:hover .animeRow--right {
+  opacity: 1;
 }
