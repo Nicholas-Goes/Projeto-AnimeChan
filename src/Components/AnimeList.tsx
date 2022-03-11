@@ -3,7 +3,6 @@ import Jikan from "../Services/Jikan";
 import './AnimeList.css'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
-import { useQuery } from "react-query";
 
 type AnimeData = {
   images: {
@@ -19,8 +18,8 @@ type props = {
   fetchUrl: string;
 }
 
-function AnimeList({title, fetchUrl}: props) {
-  
+function AnimeList({ title, fetchUrl }: props) {
+
   const [scrollX, setScrollX] = useState(0);
 
   const [anime, setAnime] = useState<AnimeData[]>([])
@@ -28,7 +27,7 @@ function AnimeList({title, fetchUrl}: props) {
 
   const handleLeftArrow = () => {
     let x = scrollX + Math.round(window.innerWidth / 2);
-    if(x > 0) {
+    if (x > 0) {
       x = 0;
     }
     setScrollX(x);
@@ -37,24 +36,24 @@ function AnimeList({title, fetchUrl}: props) {
   const handleRightArrow = () => {
     let x = scrollX - Math.round(window.innerWidth / 2);
     let ListW = anime.length * 200
-    if((window.innerWidth - ListW) > x) {
+    if ((window.innerWidth - ListW) > x) {
       x = (window.innerWidth - ListW) - 60;
     }
-    setScrollX(x);    
+    setScrollX(x);
   }
 
   useEffect(() => {
-    let componentMounted = true;    
+    let componentMounted = true;
     async function fetchData() {
       const request = await Jikan.get(fetchUrl);
-      if(componentMounted) {
+      if (componentMounted) {
         setAnime(request.data.data)
       }
     };
     fetchData();
     return () => {
       componentMounted = false;
-    }  
+    }
   }, [fetchUrl]);
 
   return (
@@ -64,19 +63,19 @@ function AnimeList({title, fetchUrl}: props) {
         <a href="#">Ver mais</a>
       </div>
       <div className='animeRow--left' onClick={handleLeftArrow}>
-        <NavigateBeforeIcon style={{fontSize: 50}}/>
+        <NavigateBeforeIcon style={{ fontSize: 50 }} />
       </div>
       <div className='animeRow--right' onClick={handleRightArrow}>
-        <NavigateNextIcon style={{fontSize: 50}}/>
+        <NavigateNextIcon style={{ fontSize: 50 }} />
       </div>
       <div className='animeRow--listarea'>
         <div className='animeRow--list' style={{
           marginLeft: scrollX,
           width: anime.length * 250,
         }}>
-          {anime.length > 0 && anime.map((anime, key) =>(
+          {anime.length > 0 && anime.map((anime, key) => (
             <div key={key} className='animeRow--item'>
-              <img src={anime.images.jpg.large_image_url} alt={anime.synopsis}/>               
+              <img src={anime.images.jpg.large_image_url} alt={anime.synopsis} />
             </div>
           ))}
         </div>

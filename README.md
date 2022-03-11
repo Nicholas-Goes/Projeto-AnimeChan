@@ -4,12 +4,19 @@
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-  <a href="https://twitter.com/NicholasGoes" target="_blank">
-    <img alt="Twitter: NicholasGoes" src="https://img.shields.io/twitter/follow/NicholasGoes.svg?style=social" />
-  </a>
 </p>
 
 ### 🏠 [Homepage](nicholasgoes-animechan.vercel.app)
+
+## Preview
+
+ <a href="https://imgur.com/MvZrgAs" target="_blank">
+    <img width="300" height="300" src="https://i.imgur.com/MvZrgAs.png">
+ </a>
+
+## Features
+
+* header image changes every page reload.
 
 ## Install
 
@@ -27,7 +34,7 @@ npm run dev
 
 👤 **Nicholas Goes**
 
-* Website: https://github.com/Nicholas-Goes
+* Website: <https://github.com/Nicholas-Goes>
 * Twitter: [@NicholasGoes](https://twitter.com/NicholasGoes)
 * Github: [@Nicholas-Goes](https://github.com/Nicholas-Goes)
 * LinkedIn: [@nicholasgoes](https://linkedin.com/in/nicholasgoes)
