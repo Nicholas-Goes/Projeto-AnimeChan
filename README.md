@@ -18,16 +18,22 @@
  </a>
 </div>
 
-## Ipad 800x1080 / Mobile 412x915
+## Mobile Versions
 
-<div style="display: flex; justify-content: center; align-items: center;">
- <a href="https://imgur.com/vkWZUBF" target="_blank">
-  <img width="350" height="915" src="https://i.imgur.com/vkWZUBF.png">
- </a>
- <a href="https://imgur.com/i9oNMWY" target="_blank">
-  <img width="540" height="915" src="https://i.imgur.com/i9oNMWY.png">
- </a>
-</div>
+<details>
+  <summary>Ipad 810x1080</summary>
+    <a href="https://imgur.com/i9oNMWY" target="_blank">
+      <img src="https://i.imgur.com/i9oNMWY.png">
+    </a>
+</details>
+
+<details>
+  <summary>Mobile 412x915</summary>
+    <a href="https://imgur.com/vkWZUBF" target="_blank">
+      <img src="https://i.imgur.com/vkWZUBF.png">
+    </a>
+</details>
+
 
 ## 📚 Features of site and used content
 
