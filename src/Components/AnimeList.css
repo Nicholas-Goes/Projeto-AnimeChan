@@ -59,7 +59,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease-in-out;
     background-color: rgb(184, 109, 11);
     opacity: 0;
 }

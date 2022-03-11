@@ -44,12 +44,17 @@ function AnimeList({title, fetchUrl}: props) {
   }
 
   useEffect(() => {
+    let componentMounted = true;    
     async function fetchData() {
       const request = await Jikan.get(fetchUrl);
-      setAnime(request.data.data)
-      return request;
-    }
+      if(componentMounted) {
+        setAnime(request.data.data)
+      }
+    };
     fetchData();
+    return () => {
+      componentMounted = false;
+    }  
   }, [fetchUrl]);
 
   return (
