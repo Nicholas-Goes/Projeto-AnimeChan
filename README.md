@@ -10,7 +10,7 @@
 
 ## 📸 Project Images
 
-## Laptop 1440x900
+## 💻 PC Version (1440x900)
 
 <div style="display: inline-block">
  <a href="https://imgur.com/VQoI1qp" target="_blank">
@@ -18,17 +18,17 @@
  </a>
 </div>
 
-## Mobile Versions
+## 📱 Mobile Versions
 
 <details>
-  <summary>Ipad 810x1080</summary>
+  <summary>Click here to view Ipad version (810x1080)</summary>
     <a href="https://imgur.com/i9oNMWY" target="_blank">
       <img src="https://i.imgur.com/i9oNMWY.png">
     </a>
 </details>
 
 <details>
-  <summary>Mobile 412x915</summary>
+  <summary>Click here to view Mobile version (412x915)</summary>
     <a href="https://imgur.com/vkWZUBF" target="_blank">
       <img src="https://i.imgur.com/vkWZUBF.png">
     </a>
