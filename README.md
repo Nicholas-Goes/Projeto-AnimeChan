@@ -22,10 +22,10 @@
 
 <div style="display: flex; justify-content: center; align-items: center;">
  <a href="https://imgur.com/vkWZUBF" target="_blank">
-  <img width="412" height="915" src="https://i.imgur.com/vkWZUBF.png">
+  <img width="400" height="915" src="https://i.imgur.com/vkWZUBF.png">
  </a>
  <a href="https://imgur.com/i9oNMWY" target="_blank">
-  <img width="550" height="915" src="https://i.imgur.com/i9oNMWY.png">
+  <img width="540" height="915" src="https://i.imgur.com/i9oNMWY.png">
  </a>
 </div>
 
