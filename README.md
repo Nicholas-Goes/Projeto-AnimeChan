@@ -10,10 +10,19 @@
 
 ## 📸 Project Images
 
-# Mobile 412x915
+# Mobile 412x915 / Ipad 810x1080 / Laptop 1440x900
+<div style="display: flex; justify-content: center; align-items: center;">
  <a href="https://imgur.com/vkWZUBF" target="_blank">
-    <img width="412" height="915" src="https://i.imgur.com/vkWZUBF.png">
+   <img width="412" height="915" src="https://i.imgur.com/vkWZUBF.png">
  </a>
+ <a href="https://imgur.com/i9oNMWY" target="_blank">
+  <img width="595" height="915" src="https://i.imgur.com/i9oNMWY.png">
+ </a>
+ <a href="https://imgur.com/VQoI1qp" target="_blank">
+  <img src="https://i.imgur.com/VQoI1qp.jpg">
+ </a>
+</div>
+
  
 ## 📚 Features of site and used content
 
@@ -31,12 +40,6 @@
 - [ ] Display the dropdown menu.
 - [ ] Refactor some regions to optimize project.
 - [ ] publish in Jikan showcase section.
-
-## Preview
-
- <a href="https://imgur.com/MvZrgAs" target="_blank">
-    <img width="300" height="300" src="https://i.imgur.com/MvZrgAs.png">
- </a>
 
 ## Features
 
