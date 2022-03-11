@@ -47,7 +47,7 @@ function WaifuHeader({ fetchUrl }: Props) {
             </a>
           </li>
           <li>
-            <a>
+            <a className="hamburguer">
               <MenuOutlinedIcon style={{ fontSize: 32 }} onClick={onClick} />
             </a>
           </li>
