@@ -31,14 +31,14 @@
 </details>
 
 
-## 📚 Site features and used content
+## 📚 Site features description and used content
 
 * Used Vite ReactTS template to create project.
-* Header image changes every page reload. (random anime images from Waifu pics Api).
-* Anime List Provided by Jikan API (v4 version ).
+* Header image changes on every page reload. (random anime images from Waifu pics Api).
+* Anime List Provided by Jikan API (v4 version).
 * All Api's content are filtered to avoid +18 content.
 * Responsive Layout (Started on mobile first Methodology).
-* Used axios to fetch api data and axios rate limiter to avoid 429 errors.
+* Used axios to fetch api data and axios rate limiter to avoid 429 to many redirects.
 
 ## ✨ To do
 
