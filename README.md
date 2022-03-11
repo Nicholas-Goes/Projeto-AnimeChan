@@ -28,6 +28,7 @@
 
 - [ ] Create a Page to fetch every anime info.
 - [ ] Create Cache to fast load content.
+- [ ] Display the dropdown menu.
 - [ ] Refactor some regions to optimize project.
 - [ ] publish in Jikan showcase section.
 
