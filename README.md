@@ -10,14 +10,25 @@
 
 ## 📸 Project Images
 
-# Laptop 1440x900
+### Laptop 1440x900
+
 <div style="display: flex; justify-content: center; align-items: center;">
  <a href="https://imgur.com/VQoI1qp" target="_blank">
   <img src="https://i.imgur.com/VQoI1qp.jpg">
  </a>
 </div>
 
- 
+### Ipad 800x1080 / Mobile 412x915
+
+<div style="display: flex; justify-content: center; align-items: center;">
+ <a href="https://imgur.com/vkWZUBF" target="_blank">
+  <img width="412" height="915" src="https://i.imgur.com/vkWZUBF.png">
+ </a>
+ <a href="https://imgur.com/i9oNMWY" target="_blank">
+  <img width="595" height="915" src="https://i.imgur.com/i9oNMWY.png">
+ </a>
+</div>
+
 ## 📚 Features of site and used content
 
 * Used Vite ReactTS template to create project.
