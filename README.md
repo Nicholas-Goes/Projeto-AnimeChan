@@ -1,10 +1,6 @@
 <h1 align="center">Welcome to AnimeChan Readme👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
-  <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
-</p>
+
+## 🐲 On Development...
 
 ### 🏠 [Homepage](https://nicholasgoes-animechan.vercel.app)
 
@@ -35,7 +31,7 @@
 </details>
 
 
-## 📚 Features of site and used content
+## 📚 Site features and used content
 
 * Used Vite ReactTS template to create project.
 * Header image changes every page reload. (random anime images from Waifu pics Api).
