@@ -12,7 +12,7 @@
 
 ## Laptop 1440x900
 
-<div style="display: flex; justify-content: center; align-items: center;">
+<div style="display: inline-block">
  <a href="https://imgur.com/VQoI1qp" target="_blank">
   <img src="https://i.imgur.com/VQoI1qp.jpg">
  </a>
