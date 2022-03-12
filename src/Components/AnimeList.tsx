@@ -71,7 +71,7 @@ function AnimeList({ title, fetchUrl }: props) {
       <div className='animeRow--listarea'>
         <div className='animeRow--list' style={{
           marginLeft: scrollX,
-          width: anime.length * 250,
+          width: anime.length * 270,
         }}>
           {anime.length > 0 && anime.map((anime, key) => (
             <div key={key} className='animeRow--item'>

@@ -1,4 +1,12 @@
 footer {
-  height: 40vh;
-  background-color: hsl(0, 0%, 99%);
+  height: auto;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
 }

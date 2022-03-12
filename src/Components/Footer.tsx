@@ -1,7 +1,19 @@
 import "./Footer.css"
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 function Footer() { 
   return(
-    <footer></footer>
+    <footer className="footer-content">
+      <div className="Social-icons">
+        <GitHubIcon style={{ fontSize: 50}} />
+        <LinkedInIcon style={{ fontSize: 50}} />
+        <InstagramIcon style={{ fontSize: 50}} />
+      </div>
+      <address>Nicholas Goes - 2022</address>
+      <section>Powered by Jikan Api & Waifu Pics Api</section>
+    </footer>
   )
 }
 

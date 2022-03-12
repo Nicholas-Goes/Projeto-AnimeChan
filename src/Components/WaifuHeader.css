@@ -2,6 +2,9 @@
   height: 35vh;
   position: relative;
   margin-top: 10vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 .waifu-header:after {
   position: absolute;
@@ -10,7 +13,35 @@
   width:100%;
   top:0;
   left:0;
-  background: linear-gradient(180deg, rgba(255,0,0,0) 0%,rgba(255, 102, 0, 0.342) 100%);
+}
+
+.waifu-aside {
+  padding: 35px;
+  width: 50%;
+  z-index: 9;
+}
+
+.waifu-aside h1 {
+  font-size: 48px;
+  color: #fff;
+  line-height: 0.9;
+  padding-bottom: 10px;
+}
+
+.waifu-aside p {
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.waifu-aside button {
+  background-color: rgb(36, 134, 27);
+  border: none;
+  padding: 20px 40px 20px 40px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .waifu-nav {
@@ -28,7 +59,7 @@
   align-items:center;
   list-style-type: none;
   justify-content: space-between;
-  padding: 30px;
+  padding: 35px;
 }
 
 .waifu-navbar li {
@@ -91,6 +122,14 @@
     height: 75vh;
     position: relative;
     margin-top: 10vh;
-    background-position: 100% 20% !important;
+  }
+  .waifu-header:after {
+    position: absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(to left, hsla(34, 100%, 50%, 0.5) 0%,hsla(17, 89%, 38%, 0.9) 100%);
   }
 }

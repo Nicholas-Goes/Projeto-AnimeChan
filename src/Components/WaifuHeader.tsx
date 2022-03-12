@@ -21,7 +21,6 @@ type Props = {
 function WaifuHeader({ fetchUrl }: Props) {
   const [background, setBackground] = useState<WaifuData[]>([]);
   const [isActive, setIsActive] = useState(false);
-  const onClick = () => setIsActive(!isActive);
 
   useEffect(() => {
     let componentMounted = true;
@@ -48,7 +47,7 @@ function WaifuHeader({ fetchUrl }: Props) {
           </li>
           <li>
             <a className="hamburguer">
-              <MenuOutlinedIcon style={{ fontSize: 32 }} onClick={onClick} />
+              <MenuOutlinedIcon style={{ fontSize: 32 }} />
             </a>
           </li>
         </ul>
@@ -94,6 +93,11 @@ function WaifuHeader({ fetchUrl }: Props) {
         backgroundPosition: 'initial',
         backgroundSize: 'cover',
       }}>
+        <aside className="waifu-aside">
+          <h1>TAKING ANIME TO THE NEXT LEVEL</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, alias aliquam sit harum, natus excepturi impedit ipsam veniam repellat omnis similique assumenda maiores quam dolore quos, voluptatem praesentium ullam exercitationem?</p>
+          <button>View More</button>
+        </aside>
       </section>
     </div>
   );
