@@ -60,7 +60,6 @@ function AnimeList({ title, fetchUrl }: props) {
     <div className="animeRow">
       <div className="animeRow--title">
         <h2>{title}</h2>
-        <a href="#">Ver mais</a>
       </div>
       <div className='animeRow--left' onClick={handleLeftArrow}>
         <NavigateBeforeIcon style={{ fontSize: 50 }} />
@@ -73,6 +72,7 @@ function AnimeList({ title, fetchUrl }: props) {
           marginLeft: scrollX,
           width: anime.length * 270,
         }}>
+          
           {anime.length > 0 && anime.map((anime, key) => (
             <div key={key} className='animeRow--item'>
               <img src={anime.images.jpg.large_image_url} alt={anime.synopsis} />

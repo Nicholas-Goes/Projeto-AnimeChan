@@ -4,14 +4,7 @@
 
 .animeRow--title {
   margin: 15px 35px 0px 35px;
-  color: hsl(0, 0%, 15%);
-}
-
-.animeRow--title a {
-  text-decoration: none;
-  font-weight: 700;
-  margin: 15px;
-  color: rgb(184, 109, 11);
+  color: black;
 }
 
 .animeRow--title {
@@ -27,8 +20,8 @@
 
 .animeRow--item {
   display: inline-block;
-  width: 200px;
-  height: 310px;
+  width: 255px;
+  height: 395px;
   margin-right: 15px;
 }
 
@@ -37,10 +30,7 @@
   height: 100%;
   transition: all 0.2s ease;
   border-radius: 15px;
-  transform: scale(0.95);
-}
-.animeRow--item img:hover {
-  transform: scale(1); 
+  transform: scale(0.97);
 }
 
 .animeRow--list {
@@ -49,19 +39,19 @@
 
 .animeRow--left,
 .animeRow--right {
-    cursor: pointer;
-    position: absolute;
-    z-index: 99;
-    margin: 120px 15px 15px 15px;
-    padding: 5px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    transition: all 0.5s ease-in-out;
-    background-color: rgb(184, 109, 11);
-    opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 150px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  background-color: orangered;
+  opacity: 0;
 }
 
 .animeRow--left {
@@ -80,11 +70,5 @@
 @media (min-width: 1440px) {
   .animeRow--title a {
     font-size: 24px
-  }
-  .animeRow--item {
-    display: inline-block;
-    width: 255px;
-    height: 395px;
-    margin-right: 15px;
   }
 }

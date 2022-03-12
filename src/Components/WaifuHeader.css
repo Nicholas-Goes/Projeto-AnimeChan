@@ -1,11 +1,31 @@
+:root {
+  --color_main: #974a51;
+  --color_secondary: #db6c75;
+  --color_tertiary: #45414a;
+  --color_quaternary: #a98950;
+}
+
+.announce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  background-color: var(--color_main);
+}
+.announce h4 {
+  color: #fff;
+}
+
 .waifu-header {
-  height: 35vh;
+  height: 65vh;
   position: relative;
   margin-top: 10vh;
   display: flex;
   justify-content: left;
   align-items: center;
+  background-position: 100% 20% !important;
 }
+
 .waifu-header:after {
   position: absolute;
   content:"";
@@ -13,12 +33,12 @@
   width:100%;
   top:0;
   left:0;
-  background: linear-gradient(to left, hsla(34, 100%, 50%, 0.5) 0%,hsla(17, 89%, 38%, 0.9) 100%);
+  background: linear-gradient(to left, rgba(219, 108, 117, 0.6), 20%,rgba(151, 74, 80, 1) 100%);
 }
 
 .waifu-aside {
-  padding: 35px;
-  width: 50%;
+  padding: 45px;
+  width: 70%;
   z-index: 9;
 }
 
@@ -36,7 +56,7 @@
 }
 
 .waifu-aside button {
-  background-color: #543855;
+  background-color: #e0667d;
   border: none;
   padding: 20px 40px 20px 40px;
   border-radius: 5px;
@@ -48,7 +68,6 @@
 
 .waifu-nav {
   width: 100%;
-  height: 10vh;
   top: 0;
   position: fixed;
   z-index: 999;
@@ -57,7 +76,7 @@
 
 .waifu-navbar {
   display: flex;
-  height: inherit;
+  height: 10vh;
   align-items:center;
   list-style-type: none;
   justify-content: space-between;
@@ -66,22 +85,53 @@
 
 .waifu-navbar li {
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .waifu-navtext a {
   font-weight: bold;
   font-size: 22px;
-  color: hsl(0, 0%, 15%);
+  color: #67323c;
 }
 
-.waifu-navtext span {
-  font-size: 28px;
+.waifu-navbar a {
+  padding: 15px;
+}
+.waifu-navbar li a button {
+  display: none;
   font-weight: bold;
-  color: rgb(184, 109, 11);
+  font-size: 22px;
+  padding: 10px 20px 10px 20px;
+  background-color: #e0667d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.menu-icon {
-  color: black;
+.waifu-navtext a {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.waifu-logo {
+  font-size: 16px;
+  font-weight: bold;
+  color: #bb5668;
+}
+
+.waifu-menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  border-radius: 15px;
+}
+
+.waifu-menu:hover {
+  background-color:#bb5668;
+  color: white !important;
 }
 
 .waifu-dropdown-menu {
@@ -111,16 +161,16 @@
 }
 
 .waifu-dropdown-list li a:hover {
-  color: #b86d0b;
+  color: #bb5668;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 768px) {
   .waifu-header {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: 50vh;
+    height: 60vh;
   }
   .waifu-aside {
     width: 100%;
@@ -140,72 +190,52 @@
   }
 }
 
-@media (min-width: 810px) {
-  .waifu-header {
-    height: 55vh;
-    position: relative;
-    margin-top: 10vh;
-    background-position: 100% 25% !important;
-  }
-  .waifu-aside {
-    padding: 35px;
-    width: 60%;
-    z-index: 9;
-  }
-  .waifu-aside h1 {
-    font-size: 36px;
-    color: #fff;
-    line-height: 0.9;
-    padding-bottom: 10px;
-  }
-  
-  .waifu-aside p {
-    font-size: 14px;
-    color: #fff;
-    padding-bottom: 20px;
-  }
-  
-  .waifu-aside button {
-    border: none;
-    padding: 10px 30px 10px 30px;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-  }
-}
-
 @media (min-width: 1440px) {
   .waifu-header {
-    height: 75vh;
-    position: relative;
+    height: 65vh;
     margin-top: 10vh;
+    background-position: 100% 20% !important;
   }
+
   .waifu-aside {
-    padding: 35px;
+    padding: 50px;
     width: 50%;
     z-index: 9;
   }
+
   .waifu-aside h1 {
     font-size: 48px;
     color: #fff;
     line-height: 0.9;
     padding-bottom: 10px;
+    text-align: justify;
   }
   
   .waifu-aside p {
     font-size: 18px;
     color: #fff;
     padding-bottom: 20px;
+    text-align: justify;
   }
+
   .waifu-aside button {
-    background-color: #543855;
     border: none;
-    padding: 20px 40px 20px 40px;
+    padding: 10px 40px 10px 40px;
     border-radius: 5px;
     color: #fff;
     font-size: 24px;
     font-weight: 700;
+    cursor: pointer;
+  }
+
+  .waifu-navbar li a button {
+    display: unset;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
   }
 }
