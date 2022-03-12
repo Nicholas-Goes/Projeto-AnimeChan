@@ -10,3 +10,9 @@ footer {
   align-items: center;
   padding: 60px;
 }
+
+a {
+  text-decoration: none;
+  color: rgb(184, 109, 11);
+  font-weight: bold;
+}

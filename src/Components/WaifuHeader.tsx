@@ -20,7 +20,6 @@ type Props = {
 
 function WaifuHeader({ fetchUrl }: Props) {
   const [background, setBackground] = useState<WaifuData[]>([]);
-  const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
     let componentMounted = true;
@@ -46,7 +45,7 @@ function WaifuHeader({ fetchUrl }: Props) {
             </a>
           </li>
           <li>
-            <a className="hamburguer">
+            <a className="menu-icon">
               <MenuOutlinedIcon style={{ fontSize: 32 }} />
             </a>
           </li>

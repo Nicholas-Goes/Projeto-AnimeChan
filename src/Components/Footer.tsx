@@ -12,7 +12,7 @@ function Footer() {
         <InstagramIcon style={{ fontSize: 50}} />
       </div>
       <address>Nicholas Goes - 2022</address>
-      <section>Powered by Jikan Api & Waifu Pics Api</section>
+      <section>Powered by <a href="https://jikan.moe" target="_blank">Jikan Api</a> & <a href="https://waifu.pics/docs" target="_blank">Waifu Pics</a> Api</section>
     </footer>
   )
 }
