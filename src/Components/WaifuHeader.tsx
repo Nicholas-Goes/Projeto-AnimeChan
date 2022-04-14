@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import Waifu from "../Services/Waifu";
 import "./WaifuHeader.css";
 import InfoIcon from "@mui/icons-material/Info";
 import StarIcon from "@mui/icons-material/Star";
@@ -8,32 +6,12 @@ import FiberNewIcon from "@mui/icons-material/FiberNew";
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 
-type WaifuData = {
-  object: {
-    url: string;
-  };
-};
 
 type Props = {
   fetchUrl: string;
 };
 
 function WaifuHeader({ fetchUrl }: Props) {
-  const [background, setBackground] = useState<WaifuData[]>([]);
-
-  useEffect(() => {
-    let componentMounted = true;
-    async function FetchWaifu() {
-      const request = await Waifu.get(fetchUrl);
-      if (componentMounted) {
-        setBackground(request.data.url);
-      }
-    }
-    FetchWaifu();
-    return () => {
-      componentMounted = false;
-    };
-  }, [fetchUrl]);
 
   return (
     <div>
@@ -102,11 +80,7 @@ function WaifuHeader({ fetchUrl }: Props) {
           </ul>
         </div>
       </nav>
-      <section className="waifu-header" style={{
-        backgroundImage: `url('${background}')`,
-        backgroundPosition: 'initial',
-        backgroundSize: 'cover',
-      }}>
+      <section className="waifu-header">
         <aside className="waifu-aside">
           <h1>LEVANDO O ANIME PARA O PRÓXIMO NIVEL</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, alias aliquam sit harum, natus excepturi impedit ipsam veniam repellat omnis similique assumenda maiores quam dolore quos, voluptatem praesentium ullam exercitationem?</p>
