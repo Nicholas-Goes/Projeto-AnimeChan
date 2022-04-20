@@ -11,7 +11,7 @@ type Props = {
   fetchUrl: string;
 };
 
-function WaifuHeader({ fetchUrl }: Props) {
+function WaifuHeader() {
 
   return (
     <div>

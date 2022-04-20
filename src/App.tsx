@@ -23,7 +23,7 @@ function App() {
       ) : (
         <div>
           <div>
-            <WaifuHeader fetchUrl={Requests.fetchWaifus} />
+            <WaifuHeader />
           </div>
             <div>
               <AnimeList title="Season Now" fetchUrl={Requests.fetchSeasonNow} />
