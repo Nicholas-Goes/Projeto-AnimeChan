@@ -2,7 +2,6 @@ export const Requests = {
   fetchTopAnime: `/top/anime`,
   fetchSeasonNow: `/seasons/now`,
   fetchSeasonUpcoming: `/seasons/upcoming`,
-  fetchWaifus: `/sfw/waifu`,
   fetchFantasy: `/anime?sfw=false&genres=10&order_by=rank&sort=desc&min_score=8`,
   fetchAction: `/anime?sfw=false&genres=1&order_by=rank&sort=desc&min_score=8`,
   fetchAdventure: `/anime?sfw=false&genres=2&order_by=rank&sort=desc&min_score=8`,
