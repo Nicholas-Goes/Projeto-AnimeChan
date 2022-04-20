@@ -1,41 +1,43 @@
-import { useState, useEffect } from 'react';
-import AnimeList from './Components/AnimeList'
-import Footer from './Components/Footer'
-import WaifuHeader from './Components/WaifuHeader'
-import { Requests } from './Services/Requests'
-import ClipLoader from 'react-spinners/ClipLoader';
+import { useState } from 'react'
+import logo from './logo.svg'
+import './App.css'
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [count, setCount] = useState(0)
 
-  useEffect(() => {
-    setTimeout(()=> {
-      setLoading(false)
-    }, 2000)
-  }, [])
-  
   return (
-    <div className="page">
-      {loading ? (
-        <div className="loading">
-          <ClipLoader size={150} color={"#67323c"}loading={loading}/>
-        </div>
-      ) : (
-        <div>
-          <div>
-            <WaifuHeader />
-          </div>
-            <div>
-              <AnimeList title="Season Now" fetchUrl={Requests.fetchSeasonNow} />
-              <AnimeList title="Season Upcoming" fetchUrl={Requests.fetchSeasonUpcoming} />
-              <AnimeList title="Top Anime" fetchUrl={Requests.fetchTopAnime} />
-            </div>
-          <div>
-            <Footer />
-          </div>
-        </div>
-        )
-      }
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>Hello Vite + React!</p>
+        <p>
+          <button type="button" onClick={() => setCount((count) => count + 1)}>
+            count is: {count}
+          </button>
+        </p>
+        <p>
+          Edit <code>App.tsx</code> and save to test HMR updates.
+        </p>
+        <p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+          {' | '}
+          <a
+            className="App-link"
+            href="https://vitejs.dev/guide/features.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Vite Docs
+          </a>
+        </p>
+      </header>
     </div>
   )
 }
