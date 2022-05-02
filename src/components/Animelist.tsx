@@ -9,6 +9,13 @@ function AnimeList() {
 
     const [anime, setAnimes] = useState<AnimeType>()
 
+    useEffect(() => {
+    
+      return () => {
+      }
+    }, [])
+    
+
 }
 
 export default AnimeList;
