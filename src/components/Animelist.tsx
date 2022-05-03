@@ -32,11 +32,15 @@ function AnimeList({title, fetchUrl}: props) {
 
     return (
       <div className="anime">
+        <div className="anime--category">
+          <h2>{title}</h2>
+          <a href="#">View More</a>
+        </div>
         <div className="anime--listarea">
           <div className="anime--list" style={{
             width: anime.length * 260,
           }}>
-            {anime.length > 0 && anime.map(anime=> {
+            {anime.length > 0 && anime.map(anime => {
               return (
                 <div className="anime--listitem">
                   <img src={anime.images.jpg.large_image_url} alt={anime.description} />
