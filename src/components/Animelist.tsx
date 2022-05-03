@@ -7,6 +7,7 @@ type AnimeData = {
       large_image_url: string;
     }
   }
+  description: string;
   synopsis: string;
 };
 
@@ -28,6 +29,24 @@ function AnimeList({title, fetchUrl}: props) {
       }
       fetchData();
     }, [fetchUrl])
+
+    return (
+      <div className="anime">
+        <div className="anime--listarea">
+          <div className="anime--list" style={{
+            width: anime.length * 260,
+          }}>
+            {anime.length > 0 && anime.map(anime=> {
+              return (
+                <div className="anime--listitem">
+                  <img src={anime.images.jpg.large_image_url} alt={anime.description} />
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </div>
+    )
 }
 
 export default AnimeList;
