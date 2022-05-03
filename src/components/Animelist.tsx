@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Jikan from "../services/Jikan";
+import './AnimeList.css'
 
 type AnimeData = {
   images: {
@@ -38,7 +39,7 @@ function AnimeList({title, fetchUrl}: props) {
         </div>
         <div className="anime--listarea">
           <div className="anime--list" style={{
-            width: anime.length * 260,
+            width: anime.length * 290,
           }}>
             {anime.length > 0 && anime.map(anime => {
               return (

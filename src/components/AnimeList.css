@@ -1,0 +1,13 @@
+.anime--listarea {
+    overflow-x: hidden;
+}
+
+.anime--listitem {
+    padding: 15px;
+    display: inline-block;
+}
+
+.anime--listitem img {
+    width: 256px;
+    height: 380px;
+}
