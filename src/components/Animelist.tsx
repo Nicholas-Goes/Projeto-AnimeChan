@@ -1,21 +1,33 @@
 import { useState, useEffect } from "react";
+import Jikan from "../services/Jikan";
 
-interface AnimeType {
-    title: string;
+type AnimeData = {
+  images: {
+    jpg: {
+      large_image_url: string;
+    }
+  }
+  synopsis: string;
+};
+
+type props = {
+  title: string;
+  fetchUrl: string;
 }
 
 
-function AnimeList() {
+function AnimeList({title, fetchUrl}: props) {
 
-    const [anime, setAnimes] = useState<AnimeType>()
+    const [anime, setAnimes] = useState<AnimeData[]>([])
 
     useEffect(() => {
-    
-      return () => {
+      async function fetchData() {
+        const request = await Jikan.get(fetchUrl);
+        setAnimes(request.data.data)
+        return request;
       }
-    }, [])
-    
-
+      fetchData();
+    }, [fetchUrl])
 }
 
 export default AnimeList;
