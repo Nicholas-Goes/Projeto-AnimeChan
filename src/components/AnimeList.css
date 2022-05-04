@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 25px;
 }
 
 .anime--category a {
@@ -17,10 +17,11 @@
 
 .anime--listarea {
     overflow-x: hidden;
+    padding-left: 15px;
 }
 
 .anime--listitem {
-    padding: 15px;
+    padding: 10px;
     display: inline-block;
 }
 
