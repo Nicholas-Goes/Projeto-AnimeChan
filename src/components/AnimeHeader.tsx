@@ -1,4 +1,7 @@
 function AnimeHeader() {
+    return (
+        <div>oi</div>
+    )
 
 }
 
