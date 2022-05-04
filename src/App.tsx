@@ -1,5 +1,5 @@
 import './App.css'
-import AnimeList from './components/AnimeList'
+import AnimeList from '../src/components/AnimeList'
 import { Requests } from './services/Requests'
 
 function App() {
