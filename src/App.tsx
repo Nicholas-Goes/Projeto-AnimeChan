@@ -1,6 +1,6 @@
-import './App.css'
-import AnimeList from './Components/AnimeList'
-import { Requests } from './Services/Requests'
+import "./App.css"
+import AnimeList from "./Components/AnimeList"
+import { Requests } from "./Services/Requests"
 
 function App() {
 
