@@ -1,6 +1,6 @@
 function AnimeHeader() {
     return (
-        <div>oi</div>
+        <div>oi fix</div>
     )
 
 }
