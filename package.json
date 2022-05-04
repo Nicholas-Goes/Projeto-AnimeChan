@@ -1,5 +1,5 @@
 {
-  "name": "vt",
+  "name": "test",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "axios-rate-limit": "^1.3.0",
+    "node": "^17.7.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
@@ -18,6 +19,6 @@
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^1.3.0",
     "typescript": "^4.6.3",
-    "vite": "^2.9.5"
+    "vite": "^2.9.7"
   }
 }
