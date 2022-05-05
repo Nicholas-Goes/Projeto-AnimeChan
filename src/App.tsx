@@ -8,7 +8,9 @@ function App() {
     <div className="App">
       <div className='list--view'>
         <AnimeList title="Season Now" endpoint={Requests.fetchSeasonNow} />
+
         <AnimeList title="Season Upcoming" endpoint={Requests.fetchSeasonUpcoming} />
+        
         <AnimeList title="Best Rated" endpoint={Requests.fetchTopAnime} />
       </div>
       
