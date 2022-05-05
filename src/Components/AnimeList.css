@@ -1,0 +1,18 @@
+
+.animeRow--title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.animeRow--item {
+    display: inline-block;
+    padding-left: 25px;
+}
+
+.animeRow--item img {
+    width: 325px;
+    height: 475px;
+    border-radius: 15px;
+}

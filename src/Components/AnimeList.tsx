@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Jikan from "../Services/Jikan";
+import './AnimeList.css';
 
 type AnimeData = {
     title: string
@@ -30,15 +31,15 @@ const [anime, setAnime] = useState<AnimeData[]>([]);
     }, [endpoint])
 
     return(
-        <div className="animeRow">
-      <div className="animeRow--title">
-        <h2>{title}</h2>
-        <a href="#">Ver mais</a>
+      <div className="animeRow">
+        <div className="animeRow--title">
+          <h2>{title}</h2>
+          <a href="#">Ver mais</a>
       </div>
       <div className='animeRow--listarea'>
         <div className='animeRow--list' style={{
           marginLeft: scrollX,
-          width: anime.length * 260,
+          width: anime.length * 375,
         }}>
           {anime.length > 0 && anime.map((anime, key) =>(
             <div key={key} className='animeRow--item'>
