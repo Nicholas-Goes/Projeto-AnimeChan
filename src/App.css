@@ -10,3 +10,7 @@ a {
     text-decoration: none;
     font-family: 'DM Sans', cursive;
 }
+
+nav ul li {
+    list-style-type: none;
+}
