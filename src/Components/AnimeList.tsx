@@ -30,9 +30,9 @@ const [anime, setAnime] = useState<AnimeData[]>([]);
         fetchData();
     }, [endpoint])
 
-    return(
-      <div className="animeRow">
-        <div className="animeRow--title">
+  return(
+    <div className="animeRow">
+      <div className="animeRow--title">
           <h2>{title}</h2>
           <a href="#">Ver mais</a>
       </div>
