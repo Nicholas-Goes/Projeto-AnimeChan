@@ -1,7 +1,13 @@
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
     padding: 25px;
+    font-family: 'DM Sans', cursive;
+}
+
+span {
+    color: aquamarine;
 }
