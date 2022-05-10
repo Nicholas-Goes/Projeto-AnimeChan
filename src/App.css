@@ -15,3 +15,13 @@ a {
 nav ul li {
     list-style-type: none;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background-color: aquamarine;
+    color: white;
+    font-family: 'DM Sans', cursive;
+}

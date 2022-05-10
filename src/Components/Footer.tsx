@@ -1,8 +1,8 @@
 function Footer() {
     return(
-        <div>
-
-        </div>
+        <footer>
+            Feito com ❤ por Nicholas-Goes
+        </footer>
     )
 }
 

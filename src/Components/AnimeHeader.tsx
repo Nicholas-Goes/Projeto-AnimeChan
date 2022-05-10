@@ -2,7 +2,9 @@ import './AnimeHeader.css'
 
 function AnimeHeader() {
     return(
-        <header></header>
+        <header>
+            This is a Header
+        </header>
     )
     
 }
