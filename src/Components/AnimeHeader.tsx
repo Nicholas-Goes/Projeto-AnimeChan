@@ -1,3 +1,5 @@
+import './AnimeHeader.css'
+
 function AnimeHeader() {
     return(
         <header></header>
