@@ -2,17 +2,22 @@ import './Menu.css'
 import MenuIcon from '@mui/icons-material/Menu';
 
 function Menu() {
-    return(
-        <nav>
-            <div>
-                <h1>Anime<span>Chan</span></h1>
+    return (
+        <div className='menu'>
+            <div className='add'>
+                Feito com ❤ por Nicholas Goes!!!
             </div>
-            <ul>
-                <li>
-                    <MenuIcon />
-                </li>
-            </ul>
-        </nav>
+            <nav>
+                <div>
+                    <h1>Anime<span>Chan</span></h1>
+                </div>
+                <ul>
+                    <li>
+                        <MenuIcon />
+                    </li>
+                </ul>
+            </nav>      
+        </div>
     )
 }
 

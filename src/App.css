@@ -16,7 +16,7 @@ nav ul li {
     list-style-type: none;
 }
 
-footer {
+.add {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,7 +1,6 @@
 import './App.css'
 import AnimeHeader from './Components/AnimeHeader'
 import AnimeList from './Components/AnimeList'
-import Footer from './Components/Footer'
 import Menu from './Components/Menu'
 import { Requests } from './Services/Requests'
 
@@ -24,7 +23,7 @@ function App() {
       </div>
 
       <div className='footer--view'>
-        <Footer />
+        
       </div>
       
     </div>

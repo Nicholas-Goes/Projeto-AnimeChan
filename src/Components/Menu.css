@@ -1,14 +1,17 @@
 
-nav {
+.menu {
     position: fixed;
+    width: 100%;
+    z-index: 999;
+
+}
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     height: 10vh;
     padding: 25px;
     font-family: 'DM Sans', cursive;
-    z-index: 999;
     background-color: white;
 }
 

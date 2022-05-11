@@ -1,7 +1,7 @@
 import './AnimeHeader.css'
 
 function AnimeHeader() {
-    return(
+    return (
         <header>
             <section className='content'>
                 <h1>Hello World!!! I'm alive</h1>
