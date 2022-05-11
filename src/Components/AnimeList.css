@@ -3,6 +3,10 @@
     margin-bottom: 30px;
 }
 
+.animeRow--list {
+    overflow-x: hidden;
+}
+
 .animeRow--listarea {
     overflow-x: hidden;
 }
@@ -19,14 +23,26 @@
     padding-left: 25px;
 }
 
+.animeRow--item h4 {
+    position: absolute;
+    padding: 5px;
+    color: white;
+}
+
+.animeRow--view {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow-x: hidden;
+}
+
 .animeRow--item img {
-    transform: scale(0.95);
     width: 225px;
     height: 350px;
     border-radius: 15px;
     transition: all ease 0.2s;
 }
 
-.animeRow--item img:hover {
-    transform: scale(1);
+.animeRow--info {
+   display: none;
 }
