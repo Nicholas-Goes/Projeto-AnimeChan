@@ -41,7 +41,7 @@ const [anime, setAnime] = useState<AnimeData[]>([]);
     <div className="animeRow">
       <div className="animeRow--title">
           <h2>{title}</h2>
-          <a href="#">Ver mais</a>
+          <a href="#">View More</a>
       </div>
       <div className='animeRow--listarea'>
         <div className='animeRow--list' style={{
