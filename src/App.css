@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Koulen&display=swap');
 
+:root {
+    --base-color: rgb(255, 127, 153);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +13,7 @@
 a {
     text-decoration: none;
     font-family: 'DM Sans', cursive;
-    color: aquamarine;
+    color: var(--base-color);
 }
 
 nav ul li {
@@ -21,7 +25,17 @@ nav ul li {
     justify-content: center;
     align-items: center;
     height: 5vh;
-    background-color: aquamarine;
+    background-color: var(--base-color);
+    color: white;
+    font-family: 'DM Sans', cursive;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    background-color: var(--base-color);
     color: white;
     font-family: 'DM Sans', cursive;
 }

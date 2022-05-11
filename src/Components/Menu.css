@@ -16,5 +16,5 @@ nav {
 }
 
 span {
-    color: aquamarine;
+    color: var(--base-color);
 }

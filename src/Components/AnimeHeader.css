@@ -1,6 +1,6 @@
 header {
     height: 70vh;
-    background-color: aquamarine;
+    background-color: var(--base-color);
     display: flex;
     justify-content: center;
     align-items: center;
