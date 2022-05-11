@@ -18,3 +18,7 @@ nav {
 span {
     color: var(--base-color);
 }
+
+.github {
+    color: white;
+}

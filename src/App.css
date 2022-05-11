@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Koulen&display=swap');
 
 :root {
-    --base-color: rgb(255, 127, 153);
+    --base-color: rgb(255, 193, 127);
 }
 
 * {
@@ -34,7 +34,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
+    height: 45vh;
     background-color: var(--base-color);
     color: white;
     font-family: 'DM Sans', cursive;
