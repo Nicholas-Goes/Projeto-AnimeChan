@@ -1,20 +1,8 @@
 header {
-    height: 70vh;
+    height: 80vh;
     background-color: var(--base-color);
     display: flex;
     justify-content: center;
     align-items: center;
     
-}
-
-.content {
-    width: 80%;
-    text-align: justify;  
-    font-family: 'DM Sans', cursive; 
-    color: white;
-    
-}
-
-.content h1 {
-    font-size: 32px;
 }

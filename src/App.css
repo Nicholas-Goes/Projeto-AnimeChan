@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Koulen&display=swap');
 
 :root {
-    --base-color: rgb(255, 127, 127);
+    --base-color: #ff93b0;
 }
 
 * {
@@ -18,6 +18,11 @@ a {
 
 nav ul li {
     list-style-type: none;
+}
+
+.list--view {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .add {
@@ -38,4 +43,9 @@ footer {
     background-color: var(--base-color);
     color: white;
     font-family: 'DM Sans', cursive;
+}
+
+footer div svg {
+    width: 64px;
+    margin: 25px;
 }

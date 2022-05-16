@@ -3,7 +3,6 @@ import Jikan from "../Services/Jikan";
 import './AnimeList.css';
 
 type AnimeData = {
-    title_english: string
     title: string
     synopsis: string
     images: {
@@ -11,12 +10,6 @@ type AnimeData = {
             large_image_url: string
         }
     }
-    rating: string
-    episodes: number
-    type: string
-    status: string
-    season: string
-    score: string
 }
 
 type props = {
