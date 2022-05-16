@@ -5,6 +5,7 @@ import './AnimeList.css';
 
 type AnimeData = {
     title_english: string
+    title: string
     synopsis: string
     images: {
         webp: {
@@ -50,18 +51,7 @@ const [anime, setAnime] = useState<AnimeData[]>([]);
         }}>
           {anime.length > 0 && anime.map((anime, key) =>(
             <div key={key} className='animeRow--item'>
-              <div className="animeRow--view">
-
               <img src={anime.images.webp.large_image_url} alt={anime.synopsis}/>
-              </div>
-              <div className="animeRow--info">
-                <h4>{anime.title_english}</h4>
-                <p>Format: {anime.type}</p>
-                <p>Episodes: {anime.episodes}</p>
-                <p>Season: {anime.season}</p>
-                <p>Status: {anime.status}</p>
-                <p>Score: {anime.score}</p>
-              </div>
             </div>
           ))}
         </div>
