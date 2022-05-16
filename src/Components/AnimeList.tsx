@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Jikan from "../Services/Jikan";
-import AnimeHeader from "./AnimeHeader";
 import './AnimeList.css';
 
 type AnimeData = {
