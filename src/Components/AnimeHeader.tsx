@@ -3,7 +3,7 @@ import './AnimeHeader.css'
 function AnimeHeader() {
     return (
         <header style={{
-            backgroundImage: `url(https://images7.alphacoders.com/123/thumb-1920-1235186.png)`,
+            backgroundImage: `url(https://i.pinimg.com/originals/a1/87/08/a1870807cee5a81179fb67f834f978bd.jpg)`,
             backgroundPosition: `center`,
             backgroundSize: `cover`
         }}>

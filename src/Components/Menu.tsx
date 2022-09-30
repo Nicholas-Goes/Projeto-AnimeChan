@@ -5,7 +5,7 @@ function Menu() {
     return (
         <div className='menu'>
             <div className='add'>
-            Maked with ❤ by &nbsp;<a className='github'>Nicholas Goes</a>!!!
+            made with 💕 by nicholas goes.
             </div>
             <nav>
                 <div>
