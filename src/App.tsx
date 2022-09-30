@@ -1,4 +1,5 @@
 import './App.css'
+import AnimeContent from './Components/AnimeContent'
 import AnimeHeader from './Components/AnimeHeader'
 import AnimeList from './Components/AnimeList'
 import Divisor from './Components/Divisor'
@@ -23,10 +24,36 @@ function App() {
         <AnimeList title="Best Rated" endpoint={Requests.fetchTopAnime} />
       </div>
 
-      <div className='footer--view'>
+      <div className='divisor--view'>
         <Divisor />
         
       </div>
+
+      <div className='content--view'>
+        <AnimeContent />
+        
+      </div>
+
+      <footer className='footer--view'>
+        <div>
+          <ul>
+            <li>Example</li>
+            <li>Example</li>
+            <li>Example</li>
+            <li>Example</li>
+            <li>Example</li>
+          </ul>
+        </div>
+
+        <section className='title'>
+          <h1>Anime<span>Chan</span></h1>          
+        </section>
+
+        <address>
+          Copyright © Nicholas Goes. All Rights Reserved.
+        </address>
+
+      </footer>
       
     </div>
   )
