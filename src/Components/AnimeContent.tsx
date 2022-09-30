@@ -1,3 +1,5 @@
+import './AnimeContent.css';
+
 function AnimeContent() {
   return (
     <section className="content">
