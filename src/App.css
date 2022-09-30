@@ -2,6 +2,7 @@
 
 :root {
     --base-color: #93cbff;
+    --bg-color: rgb(235, 235, 235);
 }
 
 * {
@@ -35,17 +36,12 @@ nav ul li {
     font-family: 'DM Sans', cursive;
 }
 
-footer {
+.divisor {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45vh;
-    background-color: var(--base-color);
+    height: 55vh;
+    background-color: var(--bg-color);
     color: white;
     font-family: 'DM Sans', cursive;
-}
-
-footer div svg {
-    width: 64px;
-    margin: 25px;
 }
