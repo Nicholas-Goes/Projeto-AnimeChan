@@ -35,24 +35,21 @@ function App() {
       </div>
 
       <footer className='footer--view'>
-        <div>
+        <div className='footer-menu'>
           <ul>
-            <li>Example</li>
-            <li>Example</li>
-            <li>Example</li>
-            <li>Example</li>
-            <li>Example</li>
+            <li className='footer-menu-item'>Example</li>
+            <li className='footer-menu-item'>Example</li>
+            <li className='footer-menu-item'>Example</li>
+            <li className='footer-menu-item'>Example</li>
           </ul>
         </div>
 
-        <section className='title'>
-          <h1>Anime<span>Chan</span></h1>          
+        <section className='footer-address'>
+          <h1>Anime<span>Chan</span></h1>
+          <address className='copyright'>
+            Copyright © Nicholas Goes. All Rights Reserved.
+          </address>          
         </section>
-
-        <address>
-          Copyright © Nicholas Goes. All Rights Reserved.
-        </address>
-
       </footer>
       
     </div>

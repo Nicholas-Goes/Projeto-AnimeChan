@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
 }
 
 a {
@@ -45,3 +46,25 @@ nav ul li {
     color: white;
     font-family: 'DM Sans', cursive;
 }
+
+.footer-menu ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .footer-menu-item {
+    list-style-type: none;
+  }
+
+  .footer-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px
+  }
+
+  .copyright {
+    padding: 15px;
+  }
