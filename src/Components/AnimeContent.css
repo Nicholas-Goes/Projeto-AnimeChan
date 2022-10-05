@@ -1,3 +1,6 @@
+.content-wrapper {
+  padding: 25px;
+}
 .content {
   height: 45vh;
   display: flex;
@@ -19,12 +22,13 @@ label {
 }
 
 input {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  width: 50%;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
